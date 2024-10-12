@@ -21,7 +21,6 @@ export const handler = async (event, context) => {
   };
 
   try {
-    console.log('paso', event.routeKey);
     switch (event.routeKey) {
       case "DELETE /items/{id}":
         await dynamo.send(
